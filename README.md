@@ -36,6 +36,11 @@ func main() {
 		UseSpace:  0.5,     // How much of the capacity do you want to use? Max is 1.
 	})
 
+	if err != nil {
+		fmt.Println("Failed to open the file:", err)
+		return
+	}
+
 	// Get the storage capacity in bytes of the file.
 	// The .Cap() method is affected by the "UseSpace" option.
 	fmt.Println("Storage capacity is", file.Cap(), "bytes.")
@@ -82,6 +87,11 @@ func main() {
 		RandSeed:  seed,    // Used to randomize the data across the file.
 		UseSpace:  0.5,     // How much of the capacity do you want to use? Max is 1.
 	})
+
+	if err != nil {
+		fmt.Println("Failed to open the file:", err)
+		return
+	}
 
 	data := make([]byte, 14)
 

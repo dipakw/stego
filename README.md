@@ -10,6 +10,12 @@ Stego is a steganography library written in Go. Steganography allows you to hide
 4. WAV
 5. WebP
 
+# Installation
+
+```bash
+go get github.com/dipakw/stego
+```
+
 # Example
 
 ## Embed secret data into a file
